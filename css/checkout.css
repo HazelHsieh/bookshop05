@@ -24,14 +24,30 @@ body .navbar {
           transform: translateX(50%);
 }
 
-.orderlist .order-count {
+.orderlist .order-product-name {
+  width: 200px;
+}
+
+.orderlist .order-count2 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
+@media (max-width: 530px) {
+  .orderlist .order-product-name {
+    width: 140px;
+  }
+  .orderlist .order-count {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
 .orderlist .ml-1 {
-  width: 50px;
+  width: 40px;
 }
 
 .order-price {

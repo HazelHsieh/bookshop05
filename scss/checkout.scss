@@ -5,9 +5,6 @@
         .navbar {
             background-color: rgb(10, 10, 70);
         }
-    
-        
-        
     }
     
     .progress-step {
@@ -17,6 +14,7 @@
         align-items: center;
         justify-content: center;
     }
+
     
     .progress {
         height: 10px;
@@ -26,21 +24,25 @@
     }
     
     .orderlist {
-    
-        .order-count {
+
+        .order-product-name {
+            width: 200px;
+        }
+
+        .order-count2 {
             justify-content: flex-end;
-    
-            // .order-input {
-            //     input::-webkit-outer-spin-button,
-            //     input::-webkit-inner-spin-button {
-            //       -webkit-appearance: none;
-            //       margin: 0;
-            //     };
-            // }
+        }
+        @media (max-width:530px) {
+            .order-product-name {
+                width: 140px;
+            }
+            .order-count{
+                flex-flow: column;
+            }  
         }
     
         .ml-1 {
-            width: 50px;
+            width: 40px;
         }
     
     }
